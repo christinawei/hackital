@@ -4,10 +4,10 @@ var app = express(); //one object for that server
 var path = require('path');
 
 app.get('/', function(req, res){
-	res.sendfile('index.html')
+	res.sendFile(path.join(__dirname, 'index.html'));
 })
 app.get('/funfacts', function(req, res){
-	res.sendfile('funfacts.html')
+	res.sendFile(path.join(__dirname, 'funfacts.html'));
 })
 app.use(express.static(__dirname));
 app.get('/game', function(req, res) {
