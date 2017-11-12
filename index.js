@@ -9,6 +9,9 @@ app.get('/', function(req, res){
 app.get('/funfacts', function(req, res){
 	res.sendFile(path.join(__dirname, 'funfacts.html'));
 })
+app.get('/report', function(req, res){
+	res.sendFile(path.join(__dirname, 'report.html'));
+})
 app.use(express.static(__dirname));
 app.get('/game', function(req, res) {
    res.sendFile(__dirname + "/game.html");
