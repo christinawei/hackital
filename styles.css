@@ -1,9 +1,4 @@
- h1{
-    color: #6ABACF;
-    font-family: 'Lobster', cursive;
-    margin: 0 auto;
+ #radio {
+ 	display: inline-block;
+ 	padding: 2rem;
  }
-
- /*body{
- 	background-color: black;
- }*/
