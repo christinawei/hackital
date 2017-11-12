@@ -4,17 +4,20 @@ var app = express(); //one object for that server
 var path = require('path');
 
 app.get('/', function(req, res){
-	res.sendFile(path.join(__dirname, 'index.html'));
+	res.sendFile(path.join(__dirname, '/html/index.html'));
 })
-app.get('/funfacts', function(req, res){
-	res.sendFile(path.join(__dirname, 'funfacts.html'));
+app.get('/info', function(req, res){
+	res.sendFile(path.join(__dirname, '/html/info.html'));
 })
 app.get('/report', function(req, res){
-	res.sendFile(path.join(__dirname, 'report.html'));
+	res.sendFile(path.join(__dirname, '/html/report.html'));
+})
+app.get('/aboutus', function(req, res){
+	res.sendFile(path.join(__dirname, '/html/aboutus.html'));
 })
 app.use(express.static(__dirname));
 app.get('/game', function(req, res) {
-   res.sendFile(__dirname + "/game.html");
+   res.sendFile(__dirname + "/html/game.html");
 });
 
 var port = process.env.PORT || 3000;
