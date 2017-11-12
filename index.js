@@ -19,6 +19,16 @@ app.use(express.static(__dirname));
 app.get('/game', function(req, res) {
    res.sendFile(__dirname + "/html/game.html");
 });
+app.get('/prevention', function(req, res) {
+   res.sendFile(__dirname + "/html/prevention.html");
+});
+app.get('/prevalence', function(req, res) {
+   res.sendFile(__dirname + "/html/prevalence.html");
+});
+app.get('/terminology', function(req, res) {
+   res.sendFile(__dirname + "/html/terminology.html");
+});
+
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
