@@ -23,3 +23,9 @@ function hoverL(element) {
 function unhoverL(element) {
     element.setAttribute('src', 'images/jess2.jpg');
 }
+function hoverC(element) {
+    element.setAttribute('src', 'images/hacksquad2.jpg');
+}
+function unhoverC(element) {
+    element.setAttribute('src', 'images/hacksquad.jpg');
+}
